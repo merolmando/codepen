@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>encuesta de gatitos</title>
+        <link href="./css/estilos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+              <h1 id="title" class="text-center">encuesta de conosimiento sobre gatos</h1>
+              <p id="description" class="description text-center">
+                agradesco que tomes tu tiempo para responder nuestra encuesta sobre gatos
+              </p>
+            </header>
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="ingrese su nombre"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="ingrese su correo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number"
+                  >edad<span class="clue">(optional)</span></label
+                >
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="10"
+                  max="99"
+                  class="form-control"
+                  placeholder="edad"
+                />
+              </div>
+              <div class="form-group">
+                <p>que tipo de gato es tu favorito?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>escoja un gato</option>
+                  <option value="siames">siames</option>
+                  <option value="peludo y gordito">peludo y gordito</option>
+                  <option value="pelones">pelones</option>
+                  <option value="no me gustan los gatitos">no me gustan los gatitos</option>
+                  <option value="otros">Otros</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>que es lo que mas te gusta de los gatitos?</p>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />son tiernos</label
+                >
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                  />son amables</label
+                >
+          
+                <label
+                  ><input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                  />son peludos</label
+                >
+              </div>
+          
+              <div class="form-group">
+                <p>
+                  que comifa es la favorita de los gatos
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                  <option disabled selected value>escoja una opcion</option>
+                  <option value="atun">atun</option>
+                  <option value="pollo">pollo</option>
+                  <option value="lata de comida">lata de comida</option>
+                  <option value="sobre de comida">sobre de comida</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>
+                  que te gustaria regalarle a un gato
+                  <span class="clue">(seleccione sus opciones)</span>
+                </p>
+          
+                <label
+                  ><input
+                    name="prefer"
+                    value="un castillo para gatos"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />un castillo para gatos</label
+                >
+                <label>
+                  <input
+                    name="prefer"
+                    value="un poste para rasgar"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />un poster para rasgar</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="un raton de tela"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />un raton de tela</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="un adorno para collar"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />adorno para collar</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="un pescado completo"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />un pescado completo</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="un liston "
+                    type="checkbox"
+                    class="input-checkbox"
+                  />un liston</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="otro tipo de regalo"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />otro tipo de regalo</label
+                >
+              </div>
+          
+              <div class="form-group">
+                <p>que tipo de regalo?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="ingrese su comentario sobre otro regalo...."
+                ></textarea>
+              </div>
+          
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  enviar
+                </button>
+              </div>
+            </form>
+          </div>          
+    </body>
+</html>
